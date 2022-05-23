@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>e̷̫͉̝͋̋̔̑w̵̧̨̡̛͙̪̱̥̲̬̟̣͋̐̿͛̈́̀̽͜͝f̴̠̲̺͈̏́̀͘ͅu̶̩̫̘͚͊̂ò̶̢̈́͐l̴̛͖͎̰̬͎̩̬͕̾̃̋̽̆̒̿j̶͇̥̟͎̼̈́̈́̂̏͆s̸̪͕̯̍̿̉̑̈́͋̃̽͝ḋ̵̨͈͈̪͙͇ờ̸̧͖͎͕͍̮̫͉̤̹̪͎͗̈́̋̂͒͛͂́͋̒p̸͎̱̞̿̈́͌̇͂̾͆̈́͘͝i̴̮̰̣̩̩̽̎̈́́̾͊́͂̈͛͂̚ ̴̧̧̞͈͓̭̠̝͓͚̠̿̍̑̄̉̓̑́͛̎̕l̶̨̨̼̯̬̦͇̲͔̬̂̔́̄͊͐̆͜k̵͔͙͊̍͛̌́̌̿̽̀ḟ̸̧̛̤͍̼͛̆̽͛͝͝ď̶̛̙͚̬̘̤̙̖̐̀́͘͘͝͝f̵̨̡̘͚̹̫̩̮̻̫̞̃̈́̑ͅd̶͔͚̤͙̗̺͓̂̓̃̔̃̿͗ḻ̴̢̢̘͉̬̀̊̇͒̄ͅķ̷͇̯̤̬͇́̌̃͂̈́͘͝s̴̨̫̩̗̺͑̆̌͗͝ḓ̵̣̝̟̲̙̠̌̊͛f̷̡͓̱̻̪̣͎̲͉͛ľ̵̢̦̞̙̟̣̝̰ḁ̵̳̮͌͌̆̐̀͋̍̃͂͘ͅn̸̡̞͒͂ ̴̛̜̼͓̤̣̫̅̊̿̏̒́̑͠͝f̷͉͚͇̾̾͊̕͝k̷̡̮͍͖͕͓̏̈́̈́̌͊̈́́̉͜ͅj̷̬̣̹͚͊͌͊f̶̛̝̗͙̟̦̹̥̯̺̩͗́̓͊̔̚ḑ̷̼̳͓̞̣͍͙̠̲͓̏͛́͝</title>
+		<style>
+			body { margin: 0; }
+		</style>
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+	<body>
+		<script src="js/three.js"></script>
+
+
+
+		<script>
+
+			const scene = new THREE.Scene();
+			const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+
+			const renderer = new THREE.WebGLRenderer();
+			renderer.setSize( window.innerWidth, window.innerHeight );
+			document.body.appendChild( renderer.domElement );
+
+			const geometry = new THREE.BoxGeometry();
+			const material = new THREE.MeshBasicMaterial( { color: 'blue' } );
+			const cube = new THREE.Mesh( geometry, material );
+			scene.add( cube );
+
+			camera.position.z = 6;
+			camera.position.y = -1;
+
+			const animate = function () {
+				requestAnimationFrame( animate );
+
+				cube.rotation.x += 0.006;
+				cube.rotation.y += 0.006;
+				renderer.render( scene, camera );
+			};
+
+
+
+			animate();
+
+
+			renderer.setClearColor('black');
+
+		</script>
+		</script>
+
+
+
+    <div id="info">
+			<navbar class="w3-bar w3-black">
+				<a href="index.html">orbital!</a>
+				<a href="index.html">thereisnointernet</a>
+			</navbar></div>
+
+		</div>
+		<div id="navsAbout"><navbar class="w3-bar w3-black">
+			<a href="index.html">home</a>
+			<a href="projects.html" class="w3-button w3-bar-item">portfolio</a>
+			<a href="about.html">about</a>
+			<a href="connect.html" class="w3-button w3-bar-item">contact</a>
+		</navbar></div>
+
+	<div>
+
+</div>
+
+
+
+    </body>
+</html>
