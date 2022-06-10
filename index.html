@@ -33,6 +33,10 @@
 			camera.position.z = 6;
 			camera.position.y = -1;
 
+			document.addEventListener( 'mousewheel', (event) => {
+    camera.position.z +=event.deltaY/500;
+});
+
 			function animate() {
 				requestAnimationFrame( animate );
 
@@ -70,14 +74,6 @@
 		<a href="about.html">about</a>
 		<a href="connect.html" class="w3-button w3-bar-item">contact</a>
 		</navbar></div>
-
-
-
-
-
-
-
-
 
 	</body>
 </html>
