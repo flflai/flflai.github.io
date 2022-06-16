@@ -13,14 +13,14 @@ ul {
 #info {
 	position: absolute;
 	top: 520px;
-   font-family: "Times New Roman", Times, serif;
+  font-family: "Times New Roman", Times, serif;
   color: white;
   font-size: 18px;
 	width: 100%;
 	text-align: center;
 	z-index: 100;
 	display:block;
-   opacity: 0.5;
+  opacity: 1;
 
 }
 #navs {
@@ -47,6 +47,7 @@ ul {
   position: absolute;
   top: 600px;
   font-size: 18px;
+  color: white;
   font-family: "Times New Roman", Times, serif;
 	width: 100%;
 	text-align: center;
@@ -80,4 +81,8 @@ ul {
 position: absolute;
 right: 0px;
 bottom: 0px;
+}
+
+.navbarTextColor {
+  color: white;
 }

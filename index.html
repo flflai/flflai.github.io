@@ -27,12 +27,12 @@
 			document.body.appendChild( renderer.domElement );
 
 			const geometry = new THREE.BoxGeometry();
-			const material = new THREE.MeshBasicMaterial( { color: 'blue' } );
+			const material = new THREE.MeshBasicMaterial( { color: 'white' } );
 			const cube = new THREE.Mesh( geometry, material );
 			scene.add( cube );
 
 			camera.position.z = 6;
-			camera.position.y = -1;
+			camera.position.y = 0;
 
 			document.addEventListener( 'mousewheel', (event) => {
     	camera.position.z +=event.deltaY/100;
@@ -69,11 +69,11 @@
 	</div>
 
 		<!-- <div id="info">emmanuel t. wang</div> -->
-		<div id="navs"><navbar class="w3-bar w3-black">
-		<a href="index.html">home</a>
-		<a href="projects.html" class="w3-button w3-bar-item">portfolio</a>
-		<a href="about.html">about</a>
-		<a href="connect.html" class="w3-button w3-bar-item">contact</a>
+		<div id="navsAbout"><navbar>
+		<a href="index.html"class="navbarTextColor">home</a>
+		<a href="projects.html"class="navbarTextColor">portfolio</a>
+		<a href="about.html"class="navbarTextColor">about</a>
+		<a href="connect.html"class="navbarTextColor">contact</a>
 		</navbar></div>
 
 	</body>

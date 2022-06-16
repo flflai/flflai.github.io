@@ -25,12 +25,12 @@
 		document.body.appendChild( renderer.domElement );
 
 		const geometry = new THREE.BoxGeometry();
-		const material = new THREE.MeshBasicMaterial( { color: 'blue' } );
+		const material = new THREE.MeshBasicMaterial( { color: 'white' } );
 		const cube = new THREE.Mesh( geometry, material );
 		scene.add( cube );
 
 		camera.position.z = 6;
-		camera.position.y = -1;
+		camera.position.y = 0;
 
 		function animate() {
 			requestAnimationFrame( animate );
@@ -64,18 +64,18 @@
 
     <div id="info">
 			<navbar class="w3-bar w3-black">
-				<a href="index.html">orbital!</a>
-				<a href="index.html">thereisnointernet</a>
+				<a href="index.html" class="navbarTextColor">orbital!</a>
+				<a href="index.html" class="navbarTextColor">thereisnointernet</a>
 				<br> </br>
-				<a href="https://flflai.github.io/everywhere-is-the-ocean/">everywhere is the ocean </a>
+				<a href="https://flflai.github.io/everywhere-is-the-ocean/" class="navbarTextColor">everywhere is the ocean </a>
 			</navbar></div>
 
 		</div>
-		<div id="navsAbout"><navbar class="w3-bar w3-black">
-			<a href="index.html">home</a>
-			<a href="projects.html" class="w3-button w3-bar-item">portfolio</a>
-			<a href="about.html">about</a>
-			<a href="connect.html" class="w3-button w3-bar-item">contact</a>
+		<div id="navsAbout"><navbar>
+			<a href="index.html" class="navbarTextColor">home</a>
+			<a href="projects.html" class="navbarTextColor">portfolio</a>
+			<a href="about.html" class="navbarTextColor">about</a>
+			<a href="connect.html" class="navbarTextColor">contact</a>
 		</navbar></div>
 
 	<div>
